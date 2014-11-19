@@ -1,0 +1,23 @@
+{
+  "name": "angular-owl-carousel",
+  "version": "0.1.0",
+  "authors": [
+    "Jonah Dahlquist <jonah@nucleussystems.com>"
+  ],
+  "description": "Populate Owl Carousel with data from an Angular controller",
+  "keywords": [
+    "owl",
+    "carousel",
+    "angular",
+    "directive"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jonahbron/angular-owl-carousel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
