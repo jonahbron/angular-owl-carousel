@@ -5,6 +5,7 @@
     "Jonah Dahlquist <jonah@nucleussystems.com>"
   ],
   "description": "Populate Owl Carousel with data from an Angular controller",
+  "main": "src/angular-owl-carousel.js",
   "keywords": [
     "owl",
     "carousel",
