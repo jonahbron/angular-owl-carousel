@@ -25,7 +25,6 @@
                         $transclude(function(clone, scope) {
 
                             scope.item = newItems[i];
-                            console.log(clone[1]);
                             owlCarousel.addItem(clone[1]);
 
                         });
