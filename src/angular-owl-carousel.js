@@ -13,7 +13,6 @@
             link: function(scope, element, attributes, controller, $transclude) {
 
                 var $element = $(element);
-                console.log(JSON.parse(attributes.owlOptions));
                 $element.owlCarousel(JSON.parse(attributes.owlOptions));
 
                 var propertyName = attributes.owlCarousel;
