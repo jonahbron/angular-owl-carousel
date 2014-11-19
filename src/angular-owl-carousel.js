@@ -2,7 +2,7 @@
 (function() {
 
     angular
-        .module('angular-owl-carousel')
+        .module('angular-owl-carousel', [])
         .directive('owlCarousel', owlCarouselDirective);
 
     function owlCarouselDirective() {
