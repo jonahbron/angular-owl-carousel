@@ -23,18 +23,16 @@
                         owlCarousel.destroy();
                     }
                     $element.empty();
-                    $element.owlCarousel(options);
-                    owlCarousel = $element.data('owlCarousel');
 
                     for (var i in newItems) {
                         $transclude(function(clone, scope) {
-
                             scope.item = newItems[i];
-
-                            owlCarousel.addItem(clone[1], -1);
-
+                            $element.append(clone[1]);
                         });
                     }
+
+                    $element.owlCarousel(options);
+                    owlCarousel = $element.data('owlCarousel');
                 });
             }
         };
