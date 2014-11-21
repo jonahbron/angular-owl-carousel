@@ -31,8 +31,6 @@
 
                             scope.item = newItems[i];
 
-                            console.log(scope.item);
-                            console.log(clone[1]);
                             owlCarousel.addItem(clone[1], -1);
 
                         });
