@@ -119,6 +119,7 @@
 						});
 					}
 
+					$element.data('owl.carousel', null);
 					$element.owlCarousel(options);
 					owlCarousel = $element.data('owlCarousel');
 				});
