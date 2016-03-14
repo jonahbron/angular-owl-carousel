@@ -11,12 +11,6 @@
 
 		var owlOptions = [
 			'items',
-			'itemsDesktop',
-			'itemsDesktopSmall',
-			'itemsTabletSmall',
-			'itemsTablet',
-			'itemsMobile',
-			'itemsCustom',
 			'margin',
 			'loop',
 			'center',
