@@ -119,8 +119,10 @@
 						});
 					}
 
-					$element.owlCarousel(options);
-					owlCarousel = $element.data('owlCarousel');
+					if (angular.isArray(newItems)) {
+						$element.owlCarousel(options);
+						owlCarousel = $element.data('owlCarousel');
+					}
 				});
 			}
 		};
