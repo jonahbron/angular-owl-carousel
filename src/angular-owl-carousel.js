@@ -7,6 +7,16 @@
 			owlCarouselDirective
 		]);
 
+	if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.exports === exports) {
+		// Export the *name* of this Angular module
+		// Sample usage:
+		//
+		//   import angularOwlCarousel from './angular-owl-carousel';
+		//   angular.module('app', [angularOwlCarousel]);
+		//
+		module.exports = "angular-owl-carousel";
+	}
+
 	function owlCarouselDirective($parse) {
 
 		var owlOptions = [
@@ -119,6 +129,7 @@
 						});
 					}
 
+					$element.data('owl.carousel', null);
 					$element.owlCarousel(options);
 					owlCarousel = $element.data('owlCarousel');
 				});
