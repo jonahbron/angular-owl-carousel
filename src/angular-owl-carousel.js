@@ -100,6 +100,8 @@
                             options[currentOptionValue] = scope.owlOptions[currentOptionValue];
                         }
                     }
+                    
+                    element.addClass('owl-carousel');
 
                     scope.$watchCollection(propertyName, function (newItems) {
 
