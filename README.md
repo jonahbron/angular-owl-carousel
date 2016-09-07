@@ -18,17 +18,19 @@ Javascript:
         .controller('MyController', MyController);
 
     function MyController() {
-        this.items = ['item1', 'item2'];
+        this.owl = {
+            items: ["item 1", "item 2"],
+            options: {
+                loop: true,
+                nav: false
+            }
+        };
     }
 
 HTML:
 
-    <div ng-controller="MyController">
-        <div owl-carousel="items">
+    <div ng-controller="MyController as main">
+        <div owl-carousel="main.owl.items" owl-options="main.owl.options">
             <div class="item">{{ item }}</div>
         </div>
     </div>
-
-*Note:* There is a bug in Owl on the master branch that breaks this directive.  I've created a branch with the fix here:
-
-https://github.com/jonahbron/OwlCarousel2
