@@ -1,6 +1,6 @@
 {
   "name": "angular-owl-carousel",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Populate Owl Carousel with data from an Angular controller",
   "main": "src/angular-owl-carousel.js",
   "scripts": {
