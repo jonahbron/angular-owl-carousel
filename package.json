@@ -18,6 +18,9 @@
   ],
   "author": "Jonah Dahlquist <jonah@nucleussystems.com>",
   "license": "MIT",
+  "contributors": [
+    {"name": "Rick", "url": "https://github.com/rickerd"}
+  ],
   "bugs": {
     "url": "https://github.com/jonahbron/angular-owl-carousel/issues"
   },
