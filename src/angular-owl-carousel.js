@@ -100,7 +100,7 @@
                             options[currentOptionValue] = scope.owlOptions[currentOptionValue];
                         }
                     }
-                    
+
                     element.addClass('owl-carousel');
 
                     scope.$watchCollection(propertyName, function (newItems) {
@@ -127,7 +127,9 @@
                     });
 
                     scope.$on("$destroy", function () {
-                        owlCarousel.destroy();
+                        if (owlCarousel) {
+                            owlCarousel.destroy();
+                        }
                     });
                 }
             };
