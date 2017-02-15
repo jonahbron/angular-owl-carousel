@@ -103,7 +103,7 @@
 
                     element.addClass('owl-carousel');
 
-                    scope.$watchCollection(propertyName, function (newItems) {
+                    scope.$parent.$watchCollection(propertyName, function (newItems) {
 
                         if (owlCarousel) {
                             owlCarousel.destroy();
