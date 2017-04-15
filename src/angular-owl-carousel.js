@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular.module('angular-owl-carousel', [])
-        .directive('owlCarousel', function ($timeout) {
+        .directive('owlCarousel', ['$timeout',function ($timeout) {
             var owlOptions = [
                 'items',
                 'margin',
@@ -133,5 +133,5 @@
                     });
                 }
             };
-        });
+        }]);
 })();
