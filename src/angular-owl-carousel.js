@@ -84,26 +84,28 @@
             return {
                 restrict: 'A',
                 scope: {
-                    owlOptions: '=owlOptions'
+                    owlOptions: '=owlOptions',
+                    owlCarousel: '=owlCarousel'
                 },
                 transclude: true,
                 link: function (scope, element, attributes, controller, $transclude) {
 
                     var options = {},
                         $element = $(element),
-                        owlCarousel = null,
-                        propertyName = attributes.owlCarousel;
+                        owlCarousel = null;
 
                     for (var optionValue in owlOptions) {
-                        var currentOptionValue = owlOptions[optionValue];
-                        if (scope.owlOptions[currentOptionValue] !== undefined) {
-                            options[currentOptionValue] = scope.owlOptions[currentOptionValue];
-                        }
+                    	if (owlOptions.hasOwnProperty(optionValue)) {
+							var currentOptionValue = owlOptions[optionValue];
+							if (scope.owlOptions[currentOptionValue] !== undefined) {
+								options[currentOptionValue] = scope.owlOptions[currentOptionValue];
+							}
+						}
                     }
 
                     element.addClass('owl-carousel');
 
-                    scope.$watchCollection(propertyName, function (newItems) {
+                    scope.$watchCollection('owlCarousel', function (newItems) {
 
                         if (owlCarousel) {
                             owlCarousel.destroy();
